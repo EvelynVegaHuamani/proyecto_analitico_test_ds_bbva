@@ -17,7 +17,7 @@ class FeatureEngineeringTransformer:
             pd.DataFrame: El DataFrame con las nuevas características.
         """
         print("🚀 Iniciando la ingeniería de características...")
-        print(df)
+        print(df.head(2))
         
         # TODO: Ordena el DataFrame por 'customer_id' y 'transaction_date'.
         # Esto es crucial para que los cálculos de ventana (móviles) funcionen correctamente.
