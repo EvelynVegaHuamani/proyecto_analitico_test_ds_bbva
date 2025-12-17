@@ -44,9 +44,9 @@ def main():
     # Pasa la ruta de salida (OUTPUT_PATH) y un nombre de archivo, por ejemplo 'feature_table.csv'.
     Utils.save_dataframe(
         final_feature_table,
-        OUTPUT_PATH,
-        filename="feature_table.csv"
+        f"{OUTPUT_PATH}/feature_table.csv"
     )
+
 
     print("\n===== PIPELINE COMPLETADO CON ÉXITO =====")
     print("\n📊 Muestra del Tablón de Features Final:")
