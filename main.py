@@ -42,9 +42,11 @@ def main():
     # Paso 5: Guardar el resultado
     # TODO: Llama a la función Utils.save_dataframe() para guardar 'final_feature_table'.
     # Pasa la ruta de salida (OUTPUT_PATH) y un nombre de archivo, por ejemplo 'feature_table.csv'.
+    print("OUTPUT_PATH =", OUTPUT_PATH)
+
     Utils.save_dataframe(
         final_feature_table,
-        f"{OUTPUT_PATH}/feature_table.csv"
+        OUTPUT_PATH
     )
 
 
