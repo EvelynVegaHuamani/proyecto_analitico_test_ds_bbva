@@ -64,8 +64,9 @@ class CleaningTransformer:
         # Por ejemplo: 'name', 'description', 'currency'.
         
         text_cols = df_cleaned.select_dtypes(include=['object']).columns
-        cols_to_drop = [col for col in text_cols if col not in categorical_cols]
-        df_cleaned.drop(columns=cols_to_drop, inplace=True)
+        print(text_cols)
+        #cols_to_drop = [col for col in text_cols if col not in categorical_cols]
+        #df_cleaned.drop(columns=cols_to_drop, inplace=True)
 
         
         print("✅ Limpieza de datos completada.")
